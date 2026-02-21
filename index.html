@@ -3,52 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Govo komunikace s.r.o.</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <title>Animated Professional Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #6e7fd1, #8ab6f7);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 3em;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Animated Website</h1>
     </header>
-
-    <section id="hero">
-        <h1>Welcome to Govo komunikace</h1>
-        <p>Your journey to effective communication starts here.</p>
-        <button class="animated-button">Get Started</button>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Clinical Logopedie</h3>
-            <p>Professional speech therapy services to enhance communication skills.</p>
-        </div>
-        <div class="service">
-            <h3>Applied Behavioral Analysis</h3>
-            <p>Evidence-based approach to improve behavior and learning.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Govo komunikace s.r.o. is dedicated to helping individuals achieve their communication potential.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@govokomunikace.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Govo komunikace s.r.o. All rights reserved.</p>
-    </footer>
+    <div class="content">
+        <p>This is a modern design showcasing advanced CSS animations and JavaScript interactions.</p>
+        <button onclick="alert('Welcome!')">Click Me!</button>
+    </div>
+    <script>
+        // JavaScript for interactive elements can be added here
+    </script>
 </body>
 </html>

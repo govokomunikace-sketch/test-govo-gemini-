@@ -3,72 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Professional Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            color: white;
-            background: linear-gradient(135deg, #6e7fd1, #8ab6f7);
-            overflow-x: hidden;
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 100px;
-            font-size: 3em;
-            opacity: 0;
-            transform: translateY(-50px);
-            animation: fadeIn 1s forwards 0.5s;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .content {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background-color: #4caf50;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Professional Animated Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Animated Website</h1>
+        <h1>Welcome to Our Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <p>This is a modern design showcasing advanced CSS animations and JavaScript interactions.</p>
-        <button onclick="alert('Welcome!')">Click Me!</button>
-    </div>
-    <script>
-        // JavaScript for interactive elements can be added here
-    </script>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is our home section with animated content.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Details about our animated website and its features.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Animation, design, and development services we offer.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Govokomunikace. All rights reserved.</p>
+    </footer>
 </body>
 </html>
